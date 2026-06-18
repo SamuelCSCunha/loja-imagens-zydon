@@ -59,14 +59,13 @@ def buscar_top3(produto, outdir, n=N_CANDIDATOS):
         except Exception:
             pass
         time.sleep(1.5 * (t + 1))
+    urls = [it["image"] for it in resultados if it.get("image")][:10]
+    with ThreadPoolExecutor(max_workers=8) as ex:   # baixa candidatos em paralelo
+        outs = list(ex.map(baixar_validar, urls))
     cands = []
-    for item in resultados:
+    for out in outs:
         if len(cands) >= n:
             break
-        url = item.get("image")
-        if not url:
-            continue
-        out = baixar_validar(url)
         if not out:
             continue
         data, w, h = out

@@ -27,7 +27,7 @@ MIN_LADO     = 500      # px: descarta imagem com lado menor que isso
 ASPECTO_MIN  = 0.5      # razao largura/altura aceitavel
 ASPECTO_MAX  = 2.0
 WORKERS      = 6        # buscas simultaneas (baixo de proposito: evita rate-limit)
-TIMEOUT      = 15
+TIMEOUT      = 7        # timeout por download: host morto falha rapido
 OUT_DIR      = "candidatos"
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"}
