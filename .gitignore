@@ -5,5 +5,8 @@ manifest.json
 produtos.txt
 *.xlsx
 resultado.csv
+.venv/
+work/
+server*.log
 __pycache__/
 *.pyc

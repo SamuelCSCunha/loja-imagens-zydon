@@ -2,7 +2,20 @@
 
 A partir do **nome** do produto, acha a foto real e devolve o **link** pronto.
 
-## Fluxo recomendado: planilha (1 comando)
+## Jeito mais facil: app de tela (duplo-clique)
+1. Duplo-clique no atalho **"Gerador de Imagens"** (area de trabalho) ou no
+   arquivo **`Gerador de Imagens.bat`**. Na 1a vez ele prepara o ambiente sozinho.
+2. O navegador abre. **Arraste sua planilha .xlsx** (varias abas, ok).
+3. Acompanhe o progresso. Aparece uma grade com a imagem escolhida de cada
+   produto — clique para **trocar** por outra opcao, ou digite outro nome e ↻
+   para buscar de novo.
+4. Clique em **Gerar links e baixar planilha**.
+
+> Deixe a janela preta (o "motor") aberta enquanto usa. Feche para encerrar.
+
+---
+
+## Alternativa por comando: planilha (1 linha)
 ```
 python planilha.py minha_planilha.xlsx
 ```
