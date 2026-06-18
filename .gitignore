@@ -1,0 +1,7 @@
+candidatos/
+escolhas.json
+galeria.html
+manifest.json
+produtos.txt
+__pycache__/
+*.pyc
