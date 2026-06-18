@@ -3,5 +3,7 @@ escolhas.json
 galeria.html
 manifest.json
 produtos.txt
+*.xlsx
+resultado.csv
 __pycache__/
 *.pyc
